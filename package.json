@@ -1,0 +1,32 @@
+{
+  "name": "splitwise-calculator-pro",
+  "version": "1.0.0",
+  "description": "Smart full-stack expense sharing app with built-in calculator, manual bill generator, receipt OCR, UPI QR settlement, and debt minimization algorithm.",
+  "main": "server/src/server.js",
+  "scripts": {
+    "dev": "node dev.js",
+    "start": "node server/src/server.js",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "test": "npm test --prefix server"
+  },
+  "keywords": [
+    "splitwise",
+    "calculator",
+    "expense-splitter",
+    "bill-splitter",
+    "upi",
+    "receipt-scanner",
+    "ocr",
+    "debt-simplification",
+    "react",
+    "vite",
+    "tailwind",
+    "express",
+    "sqlite"
+  ],
+  "author": "Antigravity",
+  "license": "MIT"
+}
