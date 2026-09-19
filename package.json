@@ -1,15 +1,19 @@
 {
-  "name": "splitwise-calculator-pro",
+  "name": "splitverse-ai",
   "version": "1.0.0",
-  "description": "Smart full-stack expense sharing app with built-in calculator, manual bill generator, receipt OCR, UPI QR settlement, and debt minimization algorithm.",
+  "description": "SplitVerse AI - Futuristic, India-First AI-Powered Expense Splitting Platform",
   "main": "server/src/server.js",
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
     "dev": "node dev.js",
     "start": "node server/src/server.js",
     "server": "npm run dev --prefix server",
     "client": "npm run dev --prefix client",
-    "build": "npm run build --prefix client",
-    "install:all": "npm install --prefix server && npm install --prefix client",
+    "build": "cd client && npm install && npm run build",
+    "install:all": "npm install --prefix client && npm install --prefix server",
     "test": "npm test --prefix server"
   },
   "keywords": [
